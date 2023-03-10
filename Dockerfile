@@ -1,4 +1,3 @@
-FROM openjdk:8
-EXPOSE 8080
-ADD target/docker-jenkins-integration-sample.jar docker-jenkins-integration-sample.jar
-ENTRYPOINT ["java","-jar","/docker-jenkins-integration-sample.jar"]
+docker build -t anngrahdhar0112/docker-jenkins-integration-sample
+docker login -u anngrahdhar0112 -p aryadhar123
+docker push anngrahdhar0112/docker-jenkins-integration-sample
